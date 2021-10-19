@@ -8,7 +8,7 @@ public class Quiz implements ActionListener{
 	String[] questions = {
 		"Who is a currently not an Overwatch character?",
 		"What is the best selling videogame of all time?",
-		"What game character did the famous actor Robin Williams reportedly name his daughter after?",
+		"What did the actor Robin Williams name his daughter?",
 		"What year was the Super Nintendo Entertainment System (SNES) released?",
 		"In God of War(2018), What is Kratos' son named?",
 		"What two keyblades does Roxas wield?"
@@ -68,12 +68,12 @@ public class Quiz implements ActionListener{
 	
 	public Quiz () {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		frame.setSize(650, 650);
+		frame.setSize(700, 700);
 		frame.getContentPane().setBackground(new Color(50,50,50));
 		frame.setLayout(null);
 		frame.setResizable(false);
 		
-		textfield.setBounds(0,0, 650, 50);
+		textfield.setBounds(0,0, 700, 50);
 		textfield.setBackground(new Color(0,0,0));
 		textfield.setForeground(new Color(200,5,5));
 		textfield.setFont(new Font("Ink Free", Font.BOLD, 30));
@@ -81,7 +81,7 @@ public class Quiz implements ActionListener{
 		textfield.setHorizontalAlignment(JTextField.CENTER);
 		textfield.setEditable(false);
 
-		textArea.setBounds(0,50, 650, 50);
+		textArea.setBounds(0,50, 700, 100);
 		textArea.setLineWrap(true);
 		textArea.setWrapStyleWord(true);
 		textArea.setBackground(new Color(0,0,0));
@@ -90,46 +90,46 @@ public class Quiz implements ActionListener{
 		textArea.setBorder(BorderFactory.createBevelBorder(1));
 		textArea.setEditable(false);
 		
-		buttonA.setBounds(0,100,100,100);
+		buttonA.setBounds(0,150,100,100);
 		buttonA.setFont(new Font("MV Boli", Font.BOLD, 35));
 		buttonA.setFocusable(false);
 		buttonA.addActionListener(this);
 		buttonA.setText("A");
 		
-		buttonB.setBounds(0,200,100,100);
+		buttonB.setBounds(0,250,100,100);
 		buttonB.setFont(new Font("MV Boli", Font.BOLD, 35));
 		buttonB.setFocusable(false);
 		buttonB.addActionListener(this);
 		buttonB.setText("B");
 		
-		buttonC.setBounds(0,300,100,100);
+		buttonC.setBounds(0,350,100,100);
 		buttonC.setFont(new Font("MV Boli", Font.BOLD, 35));
 		buttonC.setFocusable(false);
 		buttonC.addActionListener(this);
 		buttonC.setText("C");
 		
-		buttonD.setBounds(0,400,100,100);
+		buttonD.setBounds(0,450,100,100);
 		buttonD.setFont(new Font("MV Boli", Font.BOLD, 35));
 		buttonD.setFocusable(false);
 		buttonD.addActionListener(this);
 		buttonD.setText("D");
 		
-		answer_labelA.setBounds(125,100,500,100);
+		answer_labelA.setBounds(125,150,500,100);
 		answer_labelA.setBackground(new Color(50,50,50));
 		answer_labelA.setForeground(new Color(255,255,255));
 		answer_labelA.setFont(new Font("MV Boli", Font.PLAIN, 35));
 		
-		answer_labelB.setBounds(125,200,500,100);
+		answer_labelB.setBounds(125,250,500,100);
 		answer_labelB.setBackground(new Color(50,50,50));
 		answer_labelB.setForeground(new Color(255,255,255));
 		answer_labelB.setFont(new Font("MV Boli", Font.PLAIN, 35));
 		
-		answer_labelC.setBounds(125,300,500,100);
+		answer_labelC.setBounds(125,350,500,100);
 		answer_labelC.setBackground(new Color(50,50,50));
 		answer_labelC.setForeground(new Color(255,255,255));
 		answer_labelC.setFont(new Font("MV Boli", Font.PLAIN, 35));
 		
-		answer_labelD.setBounds(125,400,500,100);
+		answer_labelD.setBounds(125,450,500,100);
 		answer_labelD.setBackground(new Color(50,50,50));
 		answer_labelD.setForeground(new Color(255,255,255));
 		answer_labelD.setFont(new Font("MV Boli", Font.PLAIN, 35));
